@@ -5,13 +5,20 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-
+  # custom routes
   get 'mission' => 'welcome#mission'
   get 'programs' => 'welcome#programs'
   get 'gallery' => 'welcome#gallery'
   get 'history' => 'welcome#history'
   get 'donate' => 'welcome#donate'
   get 'contact' => 'welcome#contact'
+
+  get '*path' => redirect('/')
+
+  # redirect 404 pages to home page
+  # match '*path' => redirect('/'), via: :get
+  # or
+  # get '*path' => redirect('/')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
