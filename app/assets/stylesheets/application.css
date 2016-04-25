@@ -727,7 +727,7 @@ p.m_13{
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     font-weight: 500;
-    border: none;
+    border: solid 2px #ffffff;
     cursor: pointer;
     outline: none;
     margin-top: 5%;
