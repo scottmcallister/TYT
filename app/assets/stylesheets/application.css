@@ -58,6 +58,11 @@ body a{
     position:fixed;
     top:0px;
     z-index:-1;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
 }
 .header-top{
     background: rgba(73, 84, 91, 0.84);
@@ -178,7 +183,7 @@ body a{
     color: #FFF;
     font-size:2.7em;
     text-transform: uppercase;
-    background: #4B565D;
+    background: rgba(75, 86, 93, 0.77);
     padding: 10px;
     width:20%;
     margin: 0 auto 2% auto;
@@ -188,7 +193,7 @@ body a{
     color: #FFF;
     font-size:2.7em;
     text-transform: uppercase;
-    background: #4B565D;
+    background: rgba(75, 86, 93, 0.77);
     padding: 10px;
     width:40%;
     margin: 0 auto;
@@ -967,6 +972,7 @@ i.blog_icon5 {
 .thumbnail {
     background:transparent;
     border:none;
+    box-shadow:none;
 }
 .thumbnail .caption{
     color:#ffffff !important;
@@ -975,6 +981,7 @@ i.blog_icon5 {
 .thumbnail img {
     max-width: 225px;
     max-height:220px;
+    border:2px solid #ffffff;
 }
 
 
