@@ -34,7 +34,6 @@ p {margin: 0;}
 }
 html, body{
     font-family: 'Roboto', sans-serif;
-    background:#fff;
     font-size: 100%;
 }
 body a{
@@ -45,13 +44,20 @@ body a{
 }
 .header{
     width: 100%;
-    background: url(/assets/tyt-scene.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
     background-size: 100% 100%;
+    overflow:hidden;
+}
+.tyt-scene{
+    width:100%;
+    height:auto;
+    position:fixed;
+    top:0px;
+    z-index:-1;
 }
 .header-top{
     background: rgba(73, 84, 91, 0.84);
@@ -250,6 +256,7 @@ p.m_2{
 /*--portfolio--*/
 .Portfolio1{
     padding:6% 0;
+    background: #515F67;
 }
 .portfolio_top{
     margin-bottom:5%;
@@ -503,7 +510,7 @@ span.default_line {
     bottom:0px;
 }
 .button a {
-    color:#29353C;
+    color:#ffffff;
     font-size:0.85em;
     text-transform: uppercase;
     font-weight:bold;
@@ -515,7 +522,7 @@ span.default_line {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    border:2px solid #29353C;
+    border:2px solid #ffffff;
 }
 .button a:hover {
     background:#fff;
@@ -523,7 +530,7 @@ span.default_line {
     color:#00B3FD;
 }
 /*--twitter--*/
-.twitter{
+.history{
     background:#4bcaff;
     padding:5% 0;
 }
@@ -542,7 +549,7 @@ p.m_9{
     margin-top:2%;
     font-weight:300;
 }
-.join{
+.donate{
     width: 100%;
     background: #515f67;
     -webkit-background-size: cover;
@@ -957,6 +964,21 @@ i.blog_icon5 {
     background: url(../images/img-sprite.png)no-repeat -337px -90px;
     float: left;
 }
+.thumbnail {
+    background:transparent;
+    border:none;
+}
+.thumbnail .caption{
+    color:#ffffff !important;
+    text-align:center;
+}
+.thumbnail img {
+    max-width: 225px;
+    max-height:220px;
+}
+
+
+
 /*--responsive design--*/
 @media (max-width:1366px){
 .header-bottom h1 {
@@ -1056,6 +1078,7 @@ i.blog_icon5 {
     font-size:1.5em;
  }
  .top_grid{
+    padding-top:20px;
     margin-bottom:20px;
     text-align:center;
  }
@@ -1210,6 +1233,7 @@ i.blog_icon5 {
  }  
  .portfolio_left {
     float: none;
+    margin-bottom:20px;
  }
  #filters {
     margin-top: 7%;
