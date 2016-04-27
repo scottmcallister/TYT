@@ -188,6 +188,20 @@ Adeen also served as the Senior Arts Advisor for West London schools and college
               scrollSpeed: 1200,
               easingType: 'linear' 
           };
+
+          $(window).on('scroll', function(){
+            var st = $(this).scrollTop();
+
+            var limit = 40;
+
+            if(st <= limit){
+              $('.header-top').css('background-color', 'rgba(73, 84, 91, 1)');
+              //$('.header-top').css('background-color', 'rgba(73, 84, 91, '+(st/limit)+')');
+            }
+            else{
+              $('.header-top').css('background-color', 'rgba(73, 84, 91, 1)');
+            }
+          });
           
       });
   </script>
