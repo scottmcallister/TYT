@@ -22,6 +22,24 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family:'Above';
+    src:url(/assets/above.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Rampung';
+    src:url(/assets/Rampung.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Silver';
+    src:url(/assets/silver.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 .clear{clear: both;}
 h4, h5, h6,
@@ -179,7 +197,7 @@ body a{
     text-align:center;
 }
 .header-bottom h1{
-    font-family: 'caviar_dreamsregular';
+    font-family: 'Rampung';
     color: #FFF;
     font-size:2.7em;
     text-transform: uppercase;
@@ -189,7 +207,7 @@ body a{
     margin: 0 auto 2% auto;
 }
 .header-bottom h2{
-    font-family: 'caviar_dreamsregular';
+    font-family: 'Silver';
     color: #FFF;
     font-size:2.7em;
     text-transform: uppercase;
