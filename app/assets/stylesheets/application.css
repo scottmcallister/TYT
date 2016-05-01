@@ -76,11 +76,11 @@ body a{
     position:fixed;
     top:0px;
     z-index:-1;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
+    filter: blur(2px) grayscale(100%);
+    -webkit-filter: blur(2px) grayscale(100%);
+    -moz-filter: blur(2px) grayscale(100%);
+    -o-filter: blur(2px) grayscale(100%);
+    -ms-filter: blur(2px) grayscale(100%);
 }
 .header-top{
     background: rgba(73, 84, 91, 0.84);
@@ -195,25 +195,26 @@ body a{
 .header-bottom{
     padding:15% 0;
     text-align:center;
+    margin-top:40px;
 }
-.header-bottom h1{
-    font-family: 'Rampung';
-    color: #FFF;
-    font-size:2.7em;
-    text-transform: uppercase;
-    background: rgba(75, 86, 93, 0.77);
-    padding: 10px;
-    width:20%;
-    margin: 0 auto 2% auto;
-}
-.header-bottom h2{
+.header-bottom .title{
     font-family: 'Silver';
     color: #FFF;
-    font-size:2.7em;
+    font-size:1em;
     text-transform: uppercase;
     background: rgba(75, 86, 93, 0.77);
     padding: 10px;
-    width:40%;
+    float:center;
+    margin: 0 auto 2% auto;
+}
+.header-bottom .subtitle{
+    font-family: 'Rampung';
+    color: #FFF;
+    font-size:0.86em;
+    text-transform: uppercase;
+    background: rgba(75, 86, 93, 0.77);
+    padding: 10px;
+    float:center;
     margin: 0 auto;
 }
 /*--services--*/
@@ -554,7 +555,7 @@ span.default_line {
 }
 /*--twitter--*/
 .history{
-    background:#4bcaff;
+    background:transparent;
     padding:5% 0;
 }
 i.icon_twitter{
@@ -571,6 +572,7 @@ p.m_9{
     font-size:1.5em;
     margin-top:2%;
     font-weight:300;
+    background: rgba(75, 86, 93, 0.5);
 }
 .donate{
     width: 100%;
@@ -1002,36 +1004,57 @@ i.blog_icon5 {
     border:2px solid #ffffff;
 }
 
+.social-media{
+    display:inline-block;
+    border:2px solid #ffffff;
+    height:80px;
+    width:80px;
+    background:transparent;
+    color:#ffffff;
+    text-align:center;
+    line-height: 80px;
+    font-size:40px;
+}
+.facebook-link:hover{
+    background:#0000ff;
+    color:#ffffff;
+}
+.youtube-link:hover{
+    background:#ff0000;
+    color:#ffffff;
+}
+.email-link:hover{
+    background:#00ffff;
+    color:#ffffff;
+}
 
 
 /*--responsive design--*/
 @media (max-width:1366px){
-.header-bottom h1 {
-    font-size: 2.5em;
-    width: 20%;
+.header-bottom .title {
+    font-size: 2.2em;
  }
- .header-bottom h2 {
-    font-size: 2.5em;
-    width: 35%;
+ .header-bottom .subtitle {
+    font-size: 2.2em;
   }
 }
 @media (max-width:1280px){
-.header-bottom h1 {
-    font-size: 2.2em;
-    width: 20%;
+.header-bottom .title {
+    font-size: 1.8em;
+    float:center;
  }
- .header-bottom h2 {
-    font-size: 2.2em;
+ .header-bottom .subtitle {
+    font-size: 1.8em;
     width: 35%;
   }
 }
 @media (max-width:1024px){
-.header-bottom h1 {
-    font-size: 2em;
-    width: 25%;
+.header-bottom .title {
+    font-size: 1.4em;
+    float:center;
  }
- .header-bottom h2 {
-    font-size: 2em;
+ .header-bottom .subtitle {
+    font-size: 1.4em;
     width: 40%;
   }
   li.twt a span {
@@ -1092,7 +1115,7 @@ i.blog_icon5 {
 @media (max-width:800px){
 .header-bottom h1 {
     font-size: 1.7em;
-    width: 20%;
+    float:center;
  }
  .header-bottom h2 {
     font-size:1.7em;
@@ -1143,7 +1166,7 @@ i.blog_icon5 {
  }
  .header-bottom h1 {
     font-size: 1.5em;
-    width: 25%;
+    float:center;
  }
  .header-bottom h2 {
     font-size: 1.5em;
@@ -1219,7 +1242,7 @@ i.blog_icon5 {
 @media (max-width:640px){
  .header-bottom h1 {
     font-size: 1.3em;
-    width: 20%;
+    float:center;
  }
  .header-bottom h2 {
     font-size: 1.3em;
@@ -1239,7 +1262,7 @@ i.blog_icon5 {
 @media (max-width:480px){
  .header-bottom h1 {
     font-size: 1em;
-    width: 20%;
+    float:center;
  }
  .header-bottom h2 {
     font-size: 1.3em;
@@ -1281,7 +1304,7 @@ i.blog_icon5 {
 @media (max-width:320px){
  .header-bottom h1 {
     font-size:0.85em;
-    width:50%;
+    float:center;
     margin-bottom:0;
  }
  .header-bottom h2 {
