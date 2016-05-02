@@ -591,7 +591,10 @@ p.m_9{
     font-size:1.5em;
     margin-top:2%;
     font-weight:300;
-    background: rgba(75, 86, 93, 0.5);
+    background: rgba(75, 86, 93, 0.8);
+}
+.history .twitter_left{
+    background: rgba(75, 86, 93, 0.8);
 }
 .donate{
     width: 100%;
